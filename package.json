@@ -1,0 +1,16 @@
+{
+  "name": "lazy-dependency-require",
+  "version": "1.0.0",
+  "description": "Require a module and if not exists tries to install it globally",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "require",
+    "resolve",
+    "install"
+  ],
+  "author": "João Gilberto Magalhães",
+  "license": "MIT"
+}
