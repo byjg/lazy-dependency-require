@@ -5,20 +5,31 @@ A simple package that tries to require a node.js module and if it is fail, try t
 ```javascript
 const ldr = require('lazy-dependency-require');
 
-const myPackage = ldr.load('my-package', {
+// This will try require('my-package') and if not exists local or global will execute:
+// npm i -g --ignore-scripts my-package
+const myPackage = ldr.require('my-package', {
     args: ['--ignore-scripts'],
-    output: console.log,
+    stdout: console.log,
     moduleName: 'npm module name'
 });
 ```
 
-All options are optional. If moduleName is missing, will try load 'my-package'.
+All options are not required. If moduleName is missing, will try load 'my-package'.
 
 Ex.:
 
 ```javascript
 const ldr = require('lazy-dependency-require');
-const myPackage = ldr.load('my-package');
+
+// This will try require('my-package') and if not exists local or global will execute:
+// npm i -g my-package
+const myPackage = ldr.require('my-package');
+```
+
+## Install
+
+```bash
+npm i lazy-dependency-require --save
 ```
 
 ## NOTE
