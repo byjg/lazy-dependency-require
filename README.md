@@ -11,6 +11,16 @@ const myPackage = ldr.load('my-package', {
     moduleName: 'npm module name'
 });
 ```
+
+All options are optional. If moduleName is missing, will try load 'my-package'.
+
+Ex.:
+
+```javascript
+const ldr = require('lazy-dependency-require');
+const myPackage = ldr.load('my-package');
+```
+
 ## NOTE
 
 Some people do not like the idea to have a global package dependency for a lot of reasons. 
