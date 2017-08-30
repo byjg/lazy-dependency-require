@@ -1,6 +1,6 @@
 {
   "name": "lazy-dependency-require",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Require a module and if not exists tries to install it globally",
   "main": "main.js",
   "scripts": {
