@@ -26,13 +26,13 @@ const ldr = require('lazy-dependency-require');
 const myPackage = ldr.require('my-package');
 ```
 
-## Install
+# Install
 
 ```bash
 npm i lazy-dependency-require --save
 ```
 
-## NOTE
+# NOTE
 
 Some people do not like the idea to have a global package dependency for a lot of reasons. 
 But in some cases this could be useful. Use it for your own.
